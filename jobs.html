@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Carreiras OMNIDATA</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="carreiras/assets/img/logo_vetorizada.png" rel="icon">
+  <link href="carreiras/assets/img/logo_vetorizada.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="carreiras/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="carreiras/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="carreiras/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="carreiras/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="carreiras/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="carreiras/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="carreiras/assets/css/style.css" rel="stylesheet">
+
+  <style>
+    
+    /* CSS */
+    .button-85 {
+      padding: 10px 14px;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-85:before {
+      content: "";
+    
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+    
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    
+    @keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .button-85:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+    
+    
+
+    /* Menu */
+    
+    .snip1226 {
+      font-family: 'Rubik', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .snip1226 * {
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .snip1226 li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0 0.7em;
+      overflow: hidden;
+    }
+    .snip1226 a {
+      padding: 0.3em 0;
+      color: rgb(255, 255, 255);
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0;
+      text-decoration: none;
+    }
+    .snip1226 a:before,
+    .snip1226 a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .snip1226 a:before {
+      bottom: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      content: "";
+      background-color: #F6839C;
+    }
+    .snip1226 a:after {
+      padding: 0.3em 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: white;
+      white-space: nowrap;
+    }
+    .snip1226 li:hover a,
+    .snip1226 .current a {
+      transform: translateY(100%);
+    }
+    
+    /* End menu */
+
+    /* Carousel Footer Style */
+
+    .carouselFooter{
+        height: calc(60vh - 65px); 
+        overflow: hidden; 
+        background-size: cover; 
+        background-position: top right; 
+        background-repeat: no-repeat;
+        margin-bottom: -200px;
+    }
+
+    /* End Carousel Footer */
+
+    /* REPONSIVITY */
+
+    @media (max-width:420px){
+
+    #larguraTotal{
+     max-width: 100%;
+    }
+
+    .carouselFooter{
+        display: none !important;
+    }
+       
+    #hero, #hero .carousel-item {
+    /* height: calc(100vh - 70px); */
+    height: 400px;
+    }
+
+    #flex{
+     flex-direction: column;
+    }
+
+    }
+
+    /* END RESPONSIVITY */
+
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" style="background-color:#BF3072; border-bottom: 3 solid #BF3072;">
+    <div class="container" style="margin-top:10px;">
+
+      <div class="logo float-left" style="margin-top: -1px;">
+       <p style="margin-bottom: -20px; font-size: 25px; font-weight:700; color:white;">
+      <a href="jobs.html" style="color: white;">OMNIDATA LDA</a>
+      </p>
+        <!-- <a href="carreiras.php"><img src="carreiras/assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+
+      <ul class="snip1226">
+        <li><a href="carreiras/ser-omnidata.html" data-hover="SER OMNIDATA">SER OMNIDATA</a></li>
+        <li><a href="carreiras/areas-de-trabalho.html"  data-hover="AREAS DE TRABALHO">ÁREAS DE TRABALHO</a></li>
+        <li><a href="carreiras/beneficios-e-vantagens.html" data-hover="BENEFÍCIOS E VANTAGENS">BENEFÍCIOS e VANTAGENS</a></li>
+        <li><a href="carreiras/testemunhos.html" data-hover="TESTEMUNHOS">TESTEMUNHOS</a></li>
+      </ul>
+      </nav>
+    <!-- .nav-menu -->
+
+    </div>
+  </header>  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="edit">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+       
+        <div class="carousel-inner" role="listbox" >
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(carreiras/assets/img/trabalhadores.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <p class="animated fadeInUp" style="font-size: 40px;">Aceitas</p>
+                <h2 class="animated fadeInDown">O Desafio?</h2>
+                <a href="areas-de-trabalho.html" class="button-85" role="button">Áreas de trabalho</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(carreiras/assets/img/slide/emprego2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <p class="animated fadeInUp" style="font-size: 40px;">Venha fazer o </p>
+                <h2 class="animated fadeInDown">Mundo Diferente</h2>
+                <a href="areas-de-trabalho.html" class="button-85" role="button">Áreas de trabalho</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+ 
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio" style="background-color: black; margin-top:-30px;">
+      <div class="container">
+
+    <!-- Example 1-->
+        <div class="row">
+            <div class="col-7" id="larguraTotal">
+                <div class="card text-bg-dark" style="border:none;">
+                    <img src="https://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/field/image/rs7778_thinkstockphotos-856706258-low_1.jpg?itok=r5uk6P6u" class="card-img" alt="...">
+                    <div class="card-img-overlay"  style="background-color: rgba(0,0,0, .4); ">
+                        <h5 class="card-title" style="font-size:30px; color:white;">TRANSFORME</h5>
+                        <p class="card-text" style="font-size:50px; color:white; font-weight:bold;">SEU FUTURO</p>
+                        <a href="http://localhost:8000/candidatura" class="button-85" role="button" style="position: absolute; bottom:15px;">Candidatar-se</a>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark mt-2" style="border:none; ">
+                    <img src="https://linganbox.com/wp-content/uploads/sites/327/2022/04/37.-tips-to-the-good-life.jpg" height="220px" alt="" srcset="">
+                    <div class="card-img-overlay" style="background-color: rgba(191,48,114, 1);">
+                        <h5 class="card-title" style="font-size:30px; color:white;">ALEGRIA E CONFIANÇA</h5>
+                        <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">NO TRABALHO</p>
+                        <a href="areas-de-trabalho.html" class="button-85" role="button" style="position: absolute; bottom:15px;">Áreas de trabalho</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card text-bg-dark mb-4 mt-1" style="border:none;">
+                    <img src="https://kidshealth.org/content/dam/kidshealth/en/center/tile-teen-girl-outside.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay" style="background-color: rgba(191,48,114, 1); ">
+                        <h5 class="card-title" style="font-size:30px; color:white;">VALORIZA-MOS</h5>
+                        <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">AS NOSSAS PESSOAS</p>
+                        <a href="testimonial.html" class="button-85" role="button" style="position: absolute; bottom:15px;">Testemunhos</a>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark" style="border:none;">
+                    <img src="https://www.research-live.com/img/teens-happy-crop.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay" style="background-color: rgba(0,0,0, .4); ">
+                        <h5 class="card-title" style="font-size:30px; color:white;">ACREDITAMOS NO TRABALHO</h5>
+                        <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">EM EQUIPA</p>
+                        <a href="beneficios-e-vantagens.html" class="button-85" role="button" style="position: absolute; bottom:15px;">Benefícios e Vantagens</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!-- example end 1 -->
+
+
+    <!-- grid 2 -->
+
+     <div class="row mt-4">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="carouselFooter" style="margin-bottom:-150px;">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox" style="margin-top: -170px ;">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('carreiras/assets/img/banner/banner youtube.png');">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('carreiras/assets/img/banner/banner youtube 2.png');">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+</div>
+
+    <!-- end grid 2 -->
+
+
+    <!-- grid 3 -->
+
+  <div class="d-flex mb-4" id="flex">
+
+  <div class="p-2 ">            
+        <div class="card text-bg-dark" style="border:none;">
+            <img src="https://www.research-live.com/img/teens-happy-crop.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="background-color:rgba(0,0,0, .7); ">
+                <h5 class="card-title" style="font-size:30px; color:white;">ANIVERSÁRIO</h5>
+                <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">DA OMNIDATA</p>
+                
+            </div>
+        </div>
+  </div> 
+
+  <div class="p-2 ">
+    <div class="card text-bg-dark" style="border:none;">
+      <img src="https://www.research-live.com/img/teens-happy-crop.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay" style="background-color: rgba(191,48,114, .4); ">
+          <h5 class="card-title" style="font-size:30px; color:white;">PREPARAÇÃO DO PLANO </h5>
+          <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">OPERACIONAL</p>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="p-2">
+
+  <div class="card text-bg-dark" style="border:none;">
+    <img src="https://www.research-live.com/img/teens-happy-crop.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay" style="background-color: rgba(0,0,0, .7); ">
+        <h5 class="card-title" style="font-size:30px; color:white;">ASSEMBLEIA DA ABERTURA</h5>
+        <p class="card-text" style="font-size:30px; color:white; font-weight:bold;">  DO ANO</p>
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+    <!-- end grid 3 -->
+
+  </div>
+
+
+  </section><!-- End Our Portfolio Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color:#BF3072;">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>OMNIDATA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Powered by <a href="https://gsmart.solutions/">G-Smart Solutions</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="carreiras/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="carreiras/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="carreiras/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="carreiras/assets/vendor/php-email-form/validate.js"></script>
+  <script src="carreiras/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="carreiras/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="carreiras/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="carreiras/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="carreiras/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="carreiras/assets/vendor/aos/aos.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="carreiras/assets/js/main.js"></script>
+
+</body>
+
+</html>
